@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b14e8780d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="main">
+        <div class="calculator">
+            <div class="screen">
+                <div class="previous-screen" id="previousOperation"></div>
+                <div class="current-screen" id="currentOperation"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="clearBtn" class="btn btn-warning">CLEAR</button>
+            <button id="deleteBtn" class="btn btn-danger">DELETE</button>
+            <button class="btn btn-secondary" data-number="">7</button>
+            <button class="btn btn-secondary" data-number="">8</button>
+            <button class="btn btn-secondary" data-number="">9</button>
+            <button class="btn btn-secondary" data-operator="">÷</button>
+            <button class="btn btn-secondary" data-number="">4</button>
+            <button class="btn btn-secondary" data-number="">5</button>
+            <button class="btn btn-secondary" data-number="">6</button>
+            <button class="btn btn-secondary" data-operator="">x</button>
+            <button class="btn btn-secondary" data-number="">1</button>
+            <button class="btn btn-secondary" data-number="">2</button>
+            <button class="btn btn-secondary" data-number="">3</button>
+            <button class="btn btn-secondary" data-operator="">-</button>
+            <button class="btn btn-secondary" data-number="">0</button>
+            <button class="btn btn-secondary" id="pointBtn" data-operator="">.</button>
+            <button class="btn btn-secondary" id="equalsBtn" data-operator="">=</button>
+            <button class="btn btn-secondary" data-operator="">+</button>
+        </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>
