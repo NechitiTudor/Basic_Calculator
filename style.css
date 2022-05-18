@@ -1,3 +1,120 @@
-:root{
-    background-color: whitesmoke;
+:root {
+    --background-color: whitesmoke;
+    --calculator-color: #363737;
+    --screen-color: #CCFF99;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    min-height: 500px;
+}
+
+.calculator {
+    background-color: var(--calculator-color);
+    width: 410px;
+    border-radius: 20px;
+    padding: 20px 15px;
+}
+
+.screen {
+    background-color: var(--screen-color);
+    border: 3px black solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 10px;
+}
+
+.previous-screen {
+    min-height: 32px;
+    font-size: 20px;
+}
+
+.current-screen {
+    min-height: 64px;
+    font-size: 45px;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    cursor: pointer;
+}
+
+.button {
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 10px;
+    border-color: #1F2937;
+    cursor: pointer;
+}
+
+.button.clear,
+.button.delete {
+    grid-column: 2 span;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.button:hover {
+    background-color: rgb(173, 173, 173);
+}
+
+#equalsButton {
+    background-color: greenyellow;
+    font-weight: bold;
+}
+
+#equalsButton:hover {
+    background-color: lightgreen;
+}
+
+.button[data-operator] {
+    background-color: lightseagreen;
+    font-weight: bold;
+}
+
+.button[data-operator]:hover {
+    background-color: lightskyblue
+}
+
+.button.clear {
+    background-color: darkorange;
+}
+
+.button.delete {
+    background-color: red;
+}
+
+.button.clear:hover {
+    background-color: darkgoldenrod
+}
+
+.button.delete:hover {
+    background-color: darkred
+}
+
+.footer {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #1F2937;
+    padding: 2px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
